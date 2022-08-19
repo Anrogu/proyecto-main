@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@700&display=swap');
+
+
+
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing:border-box;  
+ 
+}
+
+.logo{
+background-image: url(../assets-otros/ring\ de\ boxeo\ icono.png);
+background-size: cover;
+min-height: 1em;
+grid-area:"icono" ;
+}
+
+header{
+    background-color: #040611;
+}
+.banner{
+background-image: url(../imagenes/boxeador-banner.jpg);
+    background-size: cover;
+    padding: top 80px;
+    min-height: 400px;
+    position: relative;
+}
+.texto-banner{
+    position: absolute;
+    top: 25%;
+    left: 40%;
+    right: 35%;
+    color: #fff;
+    font-size: 3em;
+}
+li{
+    list-style: none;
+    display: inline-block;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top:3%;
+    text-align: center;
+}
+li a {
+    text-decoration:none;
+    color:#fff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: medium;
+    text-align: center;
+    margin-top: 5%;
+
+
+}
+
+body{
+    background-color:#080c21;
+    background-repeat: no-repeat;
+    background-size:100%;
+}
+div{
+    left: 100%;
+    size: 2em;
+}
+h1{
+    color: #fff;
+    right: 35%;
+    left: 35%;
+}
+
+.contenido{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 250px 1fr 1fr 1fr ;
+    grid-template-areas:"intro intro"
+                        "imagen1 texto1"
+                        "imagen2 texto2"
+                        "imagen3 texto3";
+}
+
+#introductorio{
+
+    padding-top: 5%;
+    padding-right: 5%;
+    padding-left: 5%;
+    grid-area: intro;
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    text-align: center;
+    font-size: larger;
+
+}
+#texto1{
+    grid-area: texto1;
+    color: #fff;
+    padding: 5%;
+}
+#texto2{
+
+    grid-area: texto2;
+    color: #fff;
+    padding: 5%;
+
+
+}
+#texto3{
+
+    grid-area: texto3;
+    color: #fff;
+    padding: 5%;
+   
+}
+
+#imagen1{
+
+    grid-area: imagen1;
+    padding: 5%;
+
+
+
+}
+
+#imagen2{
+
+    grid-area: imagen2;
+    padding: 5%;
+
+
+
+}
+#imagen3{
+
+    grid-area: imagen3;
+    padding: 5%;
+
+
+}
+
+#textosalida{
+
+    grid-area: salida;
+    color:#fff ;
+
+}
+#iconolateral{
+    position: fixed;
+    left: 80%;
+    top:75%;
+    
+    }
+    img{
+        max-width:100%; 
+        height: auto;
+    }
+
+
+
+    .contenido2{
+        display: grid;
+        grid-template-columns: 1fr,1fr;
+        grid-template-rows: 100px 1fr;
+        grid-template-areas: "texto1 texto1"
+                             "imagen1 texto2";
+
+    }
+    footer{
+        display: grid;
+        color:#fff ;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: ". etc ."
+                             ". etc1 ."
+                             ". etc2 ."
+                             ". etc3 .";
+        background-color: rgb(19, 17, 17);
+        
+        
+    }
+
+    #txt1pg2{
+        grid-area: texto1;
+        right: 5%;
+        color:#fff;
+        font-size: 30px;
+    }
+    #txt2pg2{
+        padding-left: 15%;
+        grid-area: texto2;
+        color: #fff;
+    }
+    #img1pg2{
+        grid-area: imagen1 ;
+    }
+    
+    .etc{
+        grid-area: etc;
+        padding-top:2%;
+        padding-left: 50%;
+    }
+    .etc1{
+        grid-area: etc1;
+        padding-top:2%;
+        padding-left: 50%;
+    }
+    .etc2{
+        grid-area: etc2;
+        padding-top:2%;
+        padding-left: 50%;
+    }
+    .etc3{
+        grid-area: etc3;
+        padding-top:2%;
+        padding-left: 50%;
+    }
+
+    @media screen and (max-width: 700px) {
+        #introductorio{
+            color: #fff;
+            padding-bottom: 200px;
+            font-size: 15px;
+        }
+        #imagen1{
+            padding: 0%;
+        }
+        #imagen2{
+            padding: 0%;
+        }
+        #imagen3{
+            padding:0%;
+        }
+        .contenido2{
+            padding: 5%;
+        }
+        #txt2pg2{
+            padding-left: 50px;
+        }
+        .contenido{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+    }
+
+    
