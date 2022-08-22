@@ -32,7 +32,10 @@ background-image: url(../imagenes/boxeador-banner.jpg);
     top: 25%;
     left: 40%;
     right: 35%;
-    color: #fff;
+    background: -webkit-linear-gradient(90deg, rgba(51,191,222,1) 20%, rgba(20,91,198,1) 49%, rgb(62, 27, 219) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: tomato;
     font-size: 3em;
 }
 li{
@@ -44,6 +47,7 @@ li{
     padding-right: 3%;
     padding-top:3%;
     text-align: center;
+    
 }
 li a {
     text-decoration:none;
@@ -52,9 +56,13 @@ li a {
     font-size: medium;
     text-align: center;
     margin-top: 5%;
-
-
+    transition: all 0s;
 }
+#iconolateral:hover{
+    transform: scale(2,1);
+    
+}
+
 
 body{
     background-color:#080c21;
@@ -149,6 +157,7 @@ h1{
     position: fixed;
     left: 80%;
     top:75%;
+    transition: all 1s;
     
     }
     img{
@@ -216,11 +225,13 @@ h1{
         padding-left: 50%;
     }
 
+    
+
     @media screen and (max-width: 700px) {
         #introductorio{
             color: #fff;
-            padding-bottom: 200px;
-            font-size: 15px;
+            padding-bottom: 12.5rem;
+            font-size: 1rem;
         }
         #imagen1{
             padding: 0%;
@@ -235,7 +246,7 @@ h1{
             padding: 5%;
         }
         #txt2pg2{
-            padding-left: 50px;
+            padding-left: 3rem;
         }
         .contenido{
             display: grid;
@@ -243,6 +254,7 @@ h1{
             grid-template-columns: repeat(1, 1fr);
         }
 
+        
     }
 
-    
+    img { width: 100; }
